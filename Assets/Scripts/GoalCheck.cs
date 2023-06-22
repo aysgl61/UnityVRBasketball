@@ -22,14 +22,8 @@ public class GoalCheck : MonoBehaviour
             audioSource.PlayOneShot(goalSound);
             //  GameObject ball = other.gameObject;
             //  other.gameObject.transform.position = ballPosition.position;
-          
-               if(ct.duration <= 0)
-            {
+            uýManager.IncreaseScore();
 
-            }
-                uýManager.IncreaseScore();
-            
-           
         }
 
     }
