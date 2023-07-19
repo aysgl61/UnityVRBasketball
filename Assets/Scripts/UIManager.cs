@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] Text scoreText;
+    public Text scoreText;
     public int score = 0;
 
-    
+   
     public void IncreaseScore()
     {
+
         score++;
         scoreText.text = "Score: " + score;
     }

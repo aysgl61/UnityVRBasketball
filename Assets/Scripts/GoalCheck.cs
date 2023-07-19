@@ -5,19 +5,17 @@ using UnityEngine;
 public class GoalCheck : MonoBehaviour
 {
 
-    
+
     [SerializeField] UIManager uýManager;
     [SerializeField] AudioClip goalSound;
     [SerializeField] AudioSource audioSource;
 
-    CountDown ct;
-
-  
-
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Basketball")
         {
+
             Debug.Log("GOOOOOL");
             audioSource.PlayOneShot(goalSound);
             //  GameObject ball = other.gameObject;
@@ -28,8 +26,6 @@ public class GoalCheck : MonoBehaviour
 
     }
 
-  
-      
+
+
 }
-
-

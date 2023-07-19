@@ -22,12 +22,14 @@ public class CountDown : MonoBehaviour
     // private int score;
 
     //  Distance dt;
+
+    [SerializeField] GameObject TimeEndText;
     void Start()
     {
         currentTime = duration;
         timerText.text = currentTime.ToString();
         StartCoroutine(UpdateTime());
-
+       
 
     }
 
@@ -51,11 +53,13 @@ public class CountDown : MonoBehaviour
            
           //  panel.SetActive(true);
             confetti.SetActive(true);
+            TimeEndText.SetActive(true);
         }
         else
         {
            // panel.SetActive(false);
             confetti.SetActive(false);
+            TimeEndText.SetActive(false);
         }
     }
 }
