@@ -2,20 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class MenuManager : MonoBehaviour
+public class MenuManager2 : MonoBehaviour
 {
-   void ExitGame()
-   {
-        Debug.Log("Exit");
-        Application.Quit();
-   }
+    void Restart()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Hand")
         {
-            ExitGame();
+            Restart();
         }
     }
 }
