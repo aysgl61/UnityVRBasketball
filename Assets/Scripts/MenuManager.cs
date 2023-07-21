@@ -7,7 +7,6 @@ public class MenuManager : MonoBehaviour
 {
    void ExitGame()
    {
-        Debug.Log("Exit");
         Application.Quit();
    }
 

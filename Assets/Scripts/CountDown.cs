@@ -7,21 +7,17 @@ public class CountDown : MonoBehaviour
 {
     [SerializeField] private Image timerImg;
     [SerializeField] private Text timerText;
-  //  [SerializeField] private Text scoreText;
+ 
     UIManager uýManager;
 
-   // [SerializeField] AudioClip alkissound;
-   // [SerializeField] AudioSource audioSource;
+  
 
     public float currentTime; 
     public float duration; //bizim belirleyeceðimiz süre
 
-    //public GameObject panel;
     public GameObject confetti;
-
-    // private int score;
-
-    //  Distance dt;
+    
+   
 
     [SerializeField] GameObject TimeEndText;
     void Start()
@@ -50,16 +46,15 @@ public class CountDown : MonoBehaviour
     {
         if (currentTime == 0)
         {
-           
-          //  panel.SetActive(true);
             confetti.SetActive(true);
             TimeEndText.SetActive(true);
+            
         }
         else
         {
-           // panel.SetActive(false);
             confetti.SetActive(false);
             TimeEndText.SetActive(false);
+            
         }
     }
 }
